@@ -14,7 +14,7 @@ resume_name: "Eun Kang Choi"
 resume_title: "초심을 잃지말고, Steady하고 Deep하게!"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email: "dmsrkd1216@gmail.com"
+resume_contact_email: mailto:dmsrkd1216@gmail.com
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone: "☎️ (+82) 010-0000-0000"
