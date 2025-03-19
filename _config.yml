@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar: "true"
+resume_avatar: "false"
 resume_name: "Eun Kang Choi"
 resume_title: "Junior Backend Developer"
 
