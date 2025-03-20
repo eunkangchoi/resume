@@ -1,15 +1,32 @@
 # Associations
 # comment out the urls if you do not wish to display them
 
-- organization: PETA
-  role: Volunteer
-  year: 2001 &mdash; 2010
+- organization: 항해99 백엔드코스 8기 (Present)
+  role: Backend
+  year: Mar, 2025 &mdash; May, 2025
   url: https://www.peta.org/
   summary: Organized fund drives and participated in fundraising events for the benefit of PETA's local Springfield operations.
 
+- organization: 포텐데이 403
+  role: Backend
+  year: Mar, 2023 &mdash; Jun, 2023
+  url: https://www.peta.org/
+  summary: Organized fund drives and participated in fundraising events for the benefit of PETA's local Springfield operations.
 
-- organization: Yale Amnesty International
-  role: Communications coordinator
-  year: 2002 &mdash; 2004
+- organization: 원티드 프리온보딩 백엔드코스
+  role: Backend
+  year: Oct, 2022 &mdash; Nov, 2022
+  url: https://www.peta.org/
+  summary: Organized fund drives and participated in fundraising events for the benefit of PETA's local Springfield operations.
+
+- organization: KH 정보교육원 수료
+  role: Backend
+  year: May, 2020 &mdash; Dec, 2020
+  url: https://www.peta.org/
+  summary: Organized fund drives and participated in fundraising events for the benefit of PETA's local Springfield operations.
+
+- organization: 스파르타 코딩클럽 웹개발 8기
+  role: Full Stack
+  year: May, 2020 &mdash; Jun, 2020
   url: http://campuspress.yale.edu/amnesty/
   summary: During my junion and senior years at Yale, I was actively involved in Yale Amnesty International where I helped facilitate our student organization communications through website maintenance, writing for our campus publication, and graphic design of related materials.
