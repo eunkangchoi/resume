@@ -1,10 +1,19 @@
 # Recognitions
-- award: Outstanding Achievement
-  organization: Springfield Young Professionals
-  year: 2010, 2014
-  summary: Awarded the Outstanding Achievement award for contributions made to the community and professional accomplishments.
+- award: 정보처리기사 (Engineer Information Processing)
+  organization: 한국산업인력공단
+  year: Dec, 2020
+  summary: 국가자격증
 
-- award: Most Likely To Succeed
-  organization: Springfield High School
-  year: 2004
-  summary: Voted Most Likely To Succeed by a panel of my high school peers.
+- award: 리눅스마스터 2급 (Linux Master)
+  organization: KAIT (정보통신기술자격검정)
+  year: Jul, 2020
+  summary: 공인민간자격증
+# - award: Outstanding Achievement
+#   organization: Springfield Young Professionals
+#   year: 2020, 2014
+#   summary: Awarded the Outstanding Achievement award for contributions made to the community and professional accomplishments.
+
+# - award: Most Likely To Succeed
+#   organization: Springfield High School
+#   year: 2004
+#   summary: Voted Most Likely To Succeed by a panel of my high school peers.

@@ -2,25 +2,15 @@
 <html>
   {% include head.html %}
 
-  <body
-    class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}"
-  >
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <meta
-        itemprop="telephone"
-        content="{{ site.resume_contact_telephone }}"
-      />
+      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}" />
       <meta itemprop="address" content="{{ site.resume_contact_address }}" />
 
       <header class="page-header">
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img
-          src="images/avatar.jpg"
-          alt="my photo"
-          class="avatar no-print"
-          itemprop="image"
-        />
+        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image" />
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -30,26 +20,95 @@
         {% if site.display_header_contact_info == 'true' %}
         <div class="header-contact-info">
           <p>
-            {{ site.resume_contact_address}} • {{site.resume_contact_telephone}}
-            • {{site.resume_contact_email}}
+            {{ site.resume_contact_address}} • {{site.resume_contact_telephone}} •
+            {{site.resume_contact_email}}
           </p>
         </div>
         {% endif %}
 
         <div class="title-bar no-print">
           <!-- Your title is also defined in the _config.yml file -->
-          <h2 class="header-title" itemprop="jobTitle">
-            {{ site.resume_title }}
-          </h2>
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
 
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
 
+        <!-- begin 연락정보(이메일/전화번호/위치) -->
         <div class="executive-summary" itemprop="description">
-          {{ site.resume_header_intro }}
+          <div class="summary-information">
+            <ul class="summary-information-list">
+              <li class="summary-information-list-item">
+                <!-- 연락처 -->
+                <svg
+                  class="summary-information-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+                <p>{{site.resume_contact_telephone}}</p>
+              </li>
+              <li class="summary-information-list-item">
+                <!-- 이메일 -->
+                <svg
+                  class="summary-information-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+                <p>{{site.resume_contact_email}}</p>
+              </li>
+              <li class="summary-information-list-item">
+                <!-- 위치 -->
+                <svg
+                  class="summary-information-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                  />
+                </svg>
+                <p>{{site.resume_contact_address}}</p>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!--end 연락정보(이메일/전화번호/위치) -->
+        <!-- begin 자기소개 -->
+        <p>{{ site.resume_header_intro }}</p>
+        <!-- end 자기소개 -->
 
+        <!-- begin contact button -->
         {% if site.resume_looking_for_work == 'yes' %}
         <a
           href="mailto:{{ site.resume_contact_email }}"
@@ -58,10 +117,9 @@
           >Contact me</a
         >
         {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print"
-          >I'm not looking for work right now.</a
-        >
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
         {% else %} {% endif %}
+        <!-- end contact button -->
       </header>
 
       <!-- begin Work Experience -->
@@ -98,19 +156,14 @@
         </header>
 
         {% for project in site.data.projects %}
-        <div
-          class="resume-item"
-          itemscope
-          itemtype="http://schema.org/CreativeWork"
-        >
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta
             itemprop="creator"
             content="{{ site.resume_name }}"
             itemtype="http://schema.org/Person"
           />
           <h3 class="resume-item-title" itemprop="name">
-            {% if project.url %}<a href="{{ project.url }}" itemprop="url"
-              >{{ project.project }}</a
+            {% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a
             >{% else %}{{ project.project }}{% endif %}
           </h3>
           <h4 class="resume-item-details" itemprop="description">
@@ -146,9 +199,7 @@
 
         {% for recognition in site.data.recognitions %}
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">
-            {{ recognition.award }}
-          </h3>
+          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
           <h4 class="resume-item-details">
             {{ recognition.organization }} &bull; {{ recognition.year }}
           </h4>
@@ -232,15 +283,17 @@
           <ul class="resume-item-list">
             {% for link in site.data.links %}
             <li>
-              <a href="{{" link.url }} itemprop="url">{{ link.description }}</a>
+              <a href="{{ link.url }}" itemprop="url">{{ link.description }}</a>
             </li>
             {% endfor %}
           </ul>
         </div>
       </section>
+      {% endif %}
       <!-- end Links -->
-      {% endif %} {% if site.resume_print_social_links %}
+
       <!-- begin Print Social Links -->
+      {% if site.resume_print_social_links %}
       <section class="content-section print-only">
         <header class="section-header">
           <h2>Social Links</h2>

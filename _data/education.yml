@@ -2,12 +2,14 @@
 - degree: Bachelor of Engineering, Computer Engineering
   uni: Sang Myung University
   year: 2016 &mdash; 2021
-  award: ""
+  awards:
+    - award: "<b>학점</b>: 3.67 / 4.5"
+    - award: "<b>수상</b>: 대한전기학회 여성캡스톤 경진대회 우수상 (2017.10)"
   summary: ""
 
 # High-School
 - degree: High School Diploma
-  uni: Ehwa Women High School
+  uni: Ehwa Girls High School
   year: 2010 &mdash; 2013
   award: ""
   summary: ""
