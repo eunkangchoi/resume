@@ -1,16 +1,43 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
+# 회사 / 건강버스
+- project: 부산대학교 건강버스
+  role: "Member &bull; Backend Developer"
+  duration: Mar, 2023 &mdash; Jul, 2023
+  category: "DYPHI 프로젝트 &mdash; FE: 1, BE: 1, Design: 1"
   # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+  description: 12가지의 검사항목 건강데이터 저장 및 해당 입력데이터를 바탕으로 노쇠지수 및 근감소증 결과 출력 시스템
+  skills: Flutter, Dart, Firebase, AWS Route53
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+# 사이드프로젝트 / 비사이드 Trazzle
+- project: Trazzle
+  role: "Member &bull; Backend Developer"
+  category: "비사이드 사이드 프로젝트 &mdash; PM:1, FE: 2, BE: 2, Design: 1"
+  duration: Mar, 2023 &mdash; Jun, 2023
+  url: "https://bside.best/projects/detail/P240320104040"
+  github-url: "https://github.com/trazzle/trazzle-server"
+  description: 여행경험을 기록할 수 있는 iOS 기반 앱 서비스
+  skills: Nestjs, Prisma, NCP(Naver Cloud Platform), Mysql, Redis, AWS S3
+# Swit
+
+- project: "Multi Assignees"
+  role: "Member &bull; Backend Developer"
+  category: "Swit &mdash; BE: 2"
+  duration: May, 2022 &mdash; Jun, 2022
+  description: Task 카드의 담당자를 1명 에서 2명이상으로 변경
+  skills: Golang, gRPC, proto, gORM
+
+- project: "Swit Task Migration"
+  role: "Member &bull; Backend Developer"
+  category: "Swit &mdash; BE: 3"
+  duration: Nov, 2021 &mdash; Apr, 2022
+  description: 레거시 채널 API를 Golang 으로 언어변경
+  skills: Golang, gRPC, Nodejs, gORM, proto, pub/sub
+
+- project: "Swit Support Admin Page"
+  role: "Member &bull; Backend Developer"
+  category: "Swit &mdash; BE: 2"
+  duration: Jul, 2021 &mdash; Sep, 2021
+  description: 구글로그인 OAuth 로그인 기능 추가, Swit 유료서비스 클라이언트 구독자 정보UI 변경, 검색필터 추가
+  skills: Golang, gRPC, OAuth, Cookie, JWT(Json Web Token), AngularJS, Typescript, RxJS
