@@ -5,7 +5,7 @@
 - project: 부산대학교 건강버스
   role: "Member &bull; Backend Developer"
   duration: Mar, 2023 &mdash; Jul, 2023
-  category: "DYPHI 프로젝트 &mdash; FE: 1, BE: 1, Design: 1"
+  category: "DYPHI &mdash; FE: 1, BE: 1, Design: 1"
   # url: "#"
   description: 12가지의 검사항목 건강데이터 저장 및 해당 입력데이터를 바탕으로 노쇠지수 및 근감소증 결과 출력 시스템
   skills: Flutter, Dart, Firebase, AWS Route53
@@ -26,7 +26,7 @@
   category: "Swit &mdash; BE: 2"
   duration: May, 2022 &mdash; Jun, 2022
   description: Task 카드의 담당자를 1명 에서 2명이상으로 변경
-  skills: Golang, gRPC, proto, gORM
+  skills: Golang, gRPC, proto, gORM, pub/sub, web-socket
 
 - project: "Swit Task Migration"
   role: "Member &bull; Backend Developer"
